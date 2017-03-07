@@ -1,0 +1,86 @@
+body {
+  background: violet;
+}
+
+#pointTally {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#board {
+  background: linear-gradient(180deg,#fff4f4,#FC746A,orange,violet);
+  height: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 600px;
+}
+
+.food {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    transform: rotate(45deg);
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.food:before,
+.food:after {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.food:before {
+  left: -8px;
+  bottom: 0;
+  content:''
+}
+
+.food:after {
+  right: 0;
+  top: -8px;
+  content: ':)'
+}
+
+#snake {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJUlEQVQYV2NkwAT/GdHE/jMwMDAiC4IFQIpggjABuEq4CqhR/wEbSQcEChQUOwAAAABJRU5ErkJggg==) repeat;
+    background-color: green;
+}
+#snake:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: calc(50%);
+   width: 0;
+   height: 0;
+   border-top: 5px solid transparent;
+   border-right: 5px solid red;
+   border-bottom: 5px solid transparent;
+}
+
+#start {
+  color: #91A8D0;
+  font-size: 4rem;
+  position: relative;
+  text-decoration: none;
+  top: 5rem;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
