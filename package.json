@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js"
   },
-  "author": "jing",
+  "author": "jing yu <jing@jingyufanclub.com>",
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.2"
