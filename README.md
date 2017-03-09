@@ -7,3 +7,6 @@ Simply click on "Start" and food (smiling hearts) will begin to fall from the sk
 The more she eats, the bigger she gets, until she simply cannot grow anymore.
 
 Watch what happens!
+
+Chubby now runs on Koa server.
+Execute ```npm start``` or ```npm run docker```.
