@@ -4,7 +4,7 @@
   "description": "chubby",
   "scripts": {
     "start": "node server.js",
-    "docker": "docker build -t jingyufanclub/chubby-test; docker run -p 8080:8080 jingyufanclub/chubby-express"
+    "docker": "docker build -t jingyufanclub/chubby-express .; docker run -p 8080:8080 jingyufanclub/chubby-express"
   },
   "author": "jing yu <jing@jingyufanclub.com>",
   "license": "ISC",
